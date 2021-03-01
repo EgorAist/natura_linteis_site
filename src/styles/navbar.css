@@ -35,5 +35,8 @@
 .navbar-menu__item:last-child {
   margin: 0 40px 0 0;
 }
+.navbar-menu__item:hover {
+  color: darkgreen;
+}
 
 /*# sourceMappingURL=navbar.css.map */
