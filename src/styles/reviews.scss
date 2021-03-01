@@ -1,0 +1,132 @@
+@import "colors";
+@import "mixins";
+
+.review {
+    display: flex;
+
+    @include content-center;
+
+    width: 30%;
+    height: fit-content;
+
+    transition: 0.2s;
+
+    @include standard-border-radius;
+    border: 2px solid #DDDDDD;
+
+    &:hover {
+        border: 2px solid $green;
+        cursor: pointer;
+    }
+
+    &-block {
+        display: flex;
+
+        @include content-center;
+
+        width: 100%;
+    }
+
+    &s {
+        display: flex;
+
+        justify-content: space-around;
+
+        width: 90%;
+    }
+
+    &-content {
+        @include flex-column;
+
+        justify-content: space-between;
+
+        width: calc(100% - 25px);
+        height: calc(100% - 30px);
+
+        padding: 15px;
+    }
+
+    &-topper {
+        @include flex-row;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__user {
+        display: flex;
+
+        align-items: center;
+
+        &-avatar {
+            display: flex;
+
+            width: 50px;
+            height: 50px;
+
+            margin: 0 25px 0 0;
+
+            @include circle-icon;
+        }
+
+        &-name {
+            display: flex;
+
+            @include standard-font(500, 20px, 30px);
+            color: $text-dark;
+        }
+    }
+
+    &__rating {
+        display: flex;
+
+        align-items: center;
+
+        &-score {
+            display: flex;
+
+            margin: 0 10px 0 0;
+
+            @include standard-font(normal, 16px, 30px);
+            color: $text-dark;
+        }
+
+        &-star {
+            display: flex;
+
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__comment {
+        display: flex;
+
+        margin: 10px 0 10px 0;
+
+        @include standard-font(normal, 16px, 24px);
+        color: $text-dark;
+    }
+
+    &-footer {
+        display: flex;
+
+        &__platform {
+            display: flex;
+
+            @include standard-font(normal, 14px, 20px);
+            color: $text-light;
+
+            &:hover {
+                color: $text-dark;
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    &-toggle {
+        display: flex;
+
+        align-items: center;
+    }
+}

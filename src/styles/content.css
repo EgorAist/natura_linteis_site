@@ -1,0 +1,48 @@
+.first-img {
+  display: flex;
+  background-image: url("/src/img/flax-img.svg");
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /*    display: flex;
+
+      top: 80px;
+
+      width: 100%;
+      height: calc(100% - 80px);*/
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #0B132A;
+  cursor: default;
+}
+.title-additional {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+.title-additional__text {
+  width: 40%;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+  cursor: default;
+}
+
+/*# sourceMappingURL=content.css.map */

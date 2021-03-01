@@ -1,0 +1,111 @@
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: fit-content;
+  transition: 0.2s;
+  border-radius: 10px;
+  border: 2px solid #DDDDDD;
+}
+.review:hover {
+  border: 2px solid #659B2F;
+  cursor: pointer;
+}
+.review-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 25px);
+  height: calc(100% - 30px);
+  padding: 15px;
+}
+.review-topper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+}
+.review__user-avatar {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 0 25px 0 0;
+  clip-path: circle();
+  object-fit: cover;
+}
+.review__user-name {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0B132A;
+}
+.review__rating {
+  display: flex;
+  align-items: center;
+}
+.review__rating-score {
+  display: flex;
+  margin: 0 10px 0 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+}
+.review__rating-star {
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+.review__comment {
+  display: flex;
+  margin: 10px 0 10px 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0B132A;
+}
+.review-footer {
+  display: flex;
+}
+.review-footer__platform {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F5665;
+}
+.review-footer__platform:hover {
+  color: #0B132A;
+  text-decoration-line: underline;
+}
+.review-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=reviews.css.map */

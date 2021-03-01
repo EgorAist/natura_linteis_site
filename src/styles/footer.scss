@@ -1,0 +1,187 @@
+@import "colors";
+@import "mixins";
+
+
+@media screen and (max-width: 600px) {
+
+    .footer__element {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+
+    @include content-center;
+
+    margin: 50px 0 0 0;
+
+    width: 100%;
+
+    &-content {
+        display: flex;
+
+        //@include content-center;
+
+        width: 90%;
+        height: fit-content;
+
+        border-top: 1px solid $text-light;
+    }
+
+    &__element {
+        @include flex-column;
+
+        align-items: flex-start;
+        justify-content: center;
+
+        margin: 20px 10px 20px 10px;
+
+        width: 25%;
+
+        &:nth-child(2) {
+            @include content-center;
+        }
+
+        &-text {
+            display: flex;
+
+            margin: 0 0 5px 0;
+
+            @include standard-font(normal, 18px, 24px);
+            color: $text-dark;
+
+            text-align: left;
+
+            cursor: default;
+        }
+
+        &-number {
+            display: flex;
+
+            margin: 0 0 5px 0;
+
+            @include standard-font(normal, 24px, 24px);
+            color: $text-dark;
+            text-align: left;
+
+            cursor: pointer;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+
+        &-email {
+            display: flex;
+
+            margin: 0 0 5px 0;
+
+            @include standard-font(normal, 18px, 24px);
+            color: $text-dark;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+
+        &-icon {
+            display: flex;
+
+            align-self: center;
+            justify-self: center;
+
+            width: 75%;
+        }
+
+        &-address {
+            display: flex;
+
+            @include standard-font(normal, 14px, 24px);
+            text-align: right;
+
+            cursor: pointer;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+
+        &-info {
+            display: flex;
+
+            @include standard-font(normal, 14px, 24px);
+            text-align: right;
+
+            cursor: default;
+        }
+
+        
+    }
+}
+
+
+
+
+// grid-footer, мб когда-нибудь дойдут до него руки
+#contacts {
+    grid-area: contacts;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    @include standard-font(normal, 18px, 24px);
+
+    cursor: pointer;
+}
+#logotype {
+    grid-area: logotype;
+
+    width: 50%;
+    height: 50%;
+}
+#address {
+    grid-area: address;
+}
+#info {
+    grid-area: info;
+}
+
+.grid-footer {
+    display: flex;
+
+    @include content-center;
+
+    width: 100%;
+
+    &-element {
+        display: grid;
+
+        width: 25px;
+
+        &s {
+            display: grid;
+
+            width: 90%;
+
+            grid-template-areas:
+            "contacts logotype address info";
+
+            grid-gap: 20px;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            margin: 20px 20px 20px 20px;
+
+            border-top: 1px solid $text-light;
+        }
+    }
+
+}
