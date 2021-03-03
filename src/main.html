@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/articles.css">
     <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/scroll.js"></script>
+    <script src="js/carousel.js" defer></script>
 
 </head>
 <body>
@@ -86,6 +90,8 @@
     </div>
 
 </div>
+
+
 
 <div class="title">
     Статьи
@@ -163,13 +169,166 @@
 
 <div class="title-additional">
     <div class="title-additional__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Eget amet nibh pellentesque nulla nunc pharetra eget feugiat semper.
-        Volutpat semper in.
+        Любители масла Natura Linteis оставляют отзывы, с которыми
+        вы можете познакомиться ниже
     </div>
 </div>
 
 <div class="review-block">
+
+    <div class="slider">
+
+    <div class="slider__wrapper">
+
+        <div class="slider__item">
+            <div class="review">
+                <div class="review-content">
+                    <div class="review-topper">
+                        <div class="review__user">
+                            <img class="review__user-avatar" src="img/egor.jpg" alt="reviewer-avatar"/>
+                            <div class="review__user-name">
+                                Egor Aistov
+                            </div>
+                        </div>
+
+                        <div class="review__rating">
+                            <div class="review__rating-score">
+                                4.9
+                            </div>
+
+                            <img class="review__rating-star" src="img/star.svg" alt="star"/>
+                        </div>
+                    </div>
+
+                    <div class="review__comment">
+                        Wow... I am very happy to use this VPN, it turned out to be more than
+                        my expectations and so far there have been no problems.
+                        Wow... I am very happy to use this VPN, it turned out to be more than
+                        my expectations and so far there have been no problems.
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="review-footer__platform">
+                            Отзыв предоставлен сервисом Rate&Goods
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__item">
+            <div class="review">
+                <div class="review-content">
+                    <div class="review-topper">
+                        <div class="review__user">
+                            <img class="review__user-avatar" src="img/egor.jpg" alt="reviewer-avatar"/>
+                            <div class="review__user-name">
+                                Mariya Bogomolova
+                            </div>
+                        </div>
+
+                        <div class="review__rating">
+                            <div class="review__rating-score">
+                                5.0
+                            </div>
+
+                            <img class="review__rating-star" src="img/star.svg" alt="star"/>
+                        </div>
+                    </div>
+
+                    <div class="review__comment">
+                        Wow... I am very happy to use this VPN
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="review-footer__platform">
+                            Отзыв предоставлен сервисом Ozon
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__item">
+            <div class="review">
+                <div class="review-content">
+                    <div class="review-topper">
+                        <div class="review__user">
+                            <img class="review__user-avatar" src="img/egor.jpg" alt="reviewer-avatar"/>
+                            <div class="review__user-name">
+                                Sasha Dergachev
+                            </div>
+                        </div>
+
+                        <div class="review__rating">
+                            <div class="review__rating-score">
+                                4.1
+                            </div>
+
+                            <img class="review__rating-star" src="img/star.svg" alt="star"/>
+                        </div>
+                    </div>
+
+                    <div class="review__comment">
+                        Wow... I am very happy to use this VPN, it turned out to be more than
+                        my expectations and so far there have been no problems.
+                        Wow... I am very happy to use this VPN, it turned out to be more than
+                        my expectations and so far there have been no problems.
+                        Wow... I am very happy to use this VPN, it turned out to be more than
+                        my expectations and so far there have been no problems.
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="review-footer__platform">
+                            Отзыв предоставлен сервисом Rate&Goods
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__item">
+            <div class="review">
+                <div class="review-content">
+                    <div class="review-topper">
+                        <div class="review__user">
+                            <img class="review__user-avatar" src="img/egor.jpg" alt="reviewer-avatar"/>
+                            <div class="review__user-name">
+                                Pringlzz Katao
+                            </div>
+                        </div>
+
+                        <div class="review__rating">
+                            <div class="review__rating-score">
+                                14.8
+                            </div>
+
+                            <img class="review__rating-star" src="img/star.svg" alt="star"/>
+                        </div>
+                    </div>
+
+                    <div class="review__comment">
+                        Wow...
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="review-footer__platform">
+                            Отзыв предоставлен сервисом Утконос
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <img class="slider__control slider__control_left" src="img/previous-review.svg" role="button"/>
+    <img class="slider__control slider__control_right slider__control_show" src="img/next-review.svg" role="button"/>
+
+</div>
+
+<!--<img src="img/previous-review.svg"/>
+
     <div class="reviews">
         <div class="review">
             <div class="review-content">
@@ -267,10 +426,8 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="review-toggle">
-    
+    <img src="img/next-review.svg" /> -->
 </div>
 
 <div class="footer">
@@ -314,25 +471,6 @@
     </div>
 </div>
 
-
-<script>
-// Когда пользователь прокручивает вниз 250px от верхней части документа, изменяется размер навбара и его содержимого
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-    document.getElementById("navbar").style.height = "40px";
-    document.getElementById("navbar-logotype").style.height = "30px";
-    document.getElementById("navbar-logotype").style.width = "120px";
-    document.getElementById("navbar-menu").style.fontSize = "18px";
-  } else {
-    document.getElementById("navbar").style.height = "80px";
-    document.getElementById("navbar-logotype").style.height = "60px";
-    document.getElementById("navbar-logotype").style.width = "240px";
-    document.getElementById("navbar-menu").style.fontSize = "24px";
-  }
-}
-</script>
-
 </body>
+
 </html>

@@ -6,7 +6,7 @@
 
     @include content-center;
 
-    width: 30%;
+    width: 80%;
     height: fit-content;
 
     transition: 0.2s;
@@ -122,11 +122,5 @@
                 text-decoration-line: underline;
             }
         }
-    }
-
-    &-toggle {
-        display: flex;
-
-        align-items: center;
     }
 }
